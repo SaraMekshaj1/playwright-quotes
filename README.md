@@ -14,21 +14,6 @@ The scraper handles pagination, structured data extraction, logging, and clean o
 - Error handling for robustness
 - CSV export for data analysis
 
-## Project Structure
-quotes_scraper/
-│
-├── scraper/
-│ ├── browser.py
-│ ├── scraper.py
-│ └── utils.py
-│
-├── output/
-├── logs/
-├── main.py
-├── config.py
-├── requirements.txt
-└── README.md
-
 
 ## Technologies Used
 - Python
