@@ -1,0 +1,17 @@
+2026-02-16 17:21:31,607 - INFO - Starting scraping job
+2026-02-16 17:21:35,343 - INFO - Browser started
+2026-02-16 17:21:35,344 - INFO - Opening URL: https://quotes.toscrape.com/js/
+2026-02-16 17:21:39,925 - INFO - Found 10 quotes on page <Page url='https://quotes.toscrape.com/js/'>
+2026-02-16 17:21:41,914 - INFO - Found 10 quotes on page <Page url='https://quotes.toscrape.com/js/page/2/'>
+2026-02-16 17:21:43,733 - INFO - Found 10 quotes on page <Page url='https://quotes.toscrape.com/js/page/3/'>
+2026-02-16 17:21:45,381 - INFO - Found 10 quotes on page <Page url='https://quotes.toscrape.com/js/page/4/'>
+2026-02-16 17:21:47,307 - INFO - Found 10 quotes on page <Page url='https://quotes.toscrape.com/js/page/5/'>
+2026-02-16 17:21:49,108 - INFO - Found 10 quotes on page <Page url='https://quotes.toscrape.com/js/page/6/'>
+2026-02-16 17:21:51,059 - INFO - Found 10 quotes on page <Page url='https://quotes.toscrape.com/js/page/7/'>
+2026-02-16 17:21:52,932 - INFO - Found 10 quotes on page <Page url='https://quotes.toscrape.com/js/page/8/'>
+2026-02-16 17:21:54,597 - INFO - Found 10 quotes on page <Page url='https://quotes.toscrape.com/js/page/9/'>
+2026-02-16 17:21:56,566 - INFO - Found 10 quotes on page <Page url='https://quotes.toscrape.com/js/page/10/'>
+2026-02-16 17:21:57,266 - INFO - No more pages found
+2026-02-16 17:21:57,287 - INFO - Saved 100 rows to output/quotes_js_playwright.csv
+2026-02-16 17:21:58,358 - INFO - Browser closed
+2026-02-16 17:21:58,359 - INFO - Finished scraping 100 quotes
