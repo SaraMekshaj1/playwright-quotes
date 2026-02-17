@@ -1,5 +1,6 @@
 from typing import List, Dict
 from playwright.sync_api import Page
+from utils.retry import retry
 
 class QuotesScraper:
     def __init__(self, page: Page, wait_time: int, logger):
@@ -12,10 +13,10 @@ class QuotesScraper:
 
         try:
             self.logger.info(f"Opening URL: {url}")
-            self.page.goto(url)
+            retry(lambda: self.page.goto(url), logger=self.logger)
 
             while True:
-                self.page.wait_for_selector("div.quote")
+                self.page.wait_for_selector("div.quote", timeout=5000)
                 quotes = self.page.query_selector_all("div.quote")
 
                 self.logger.info(f"Found {len(quotes)} quotes on page {self.page.url}")
@@ -35,7 +36,9 @@ class QuotesScraper:
                     break
 
                 next_btn.click()
-                self.page.wait_for_timeout(self.wait_time)
+
+                # Wait for next page content (better than fixed timeout)
+                self.page.wait_for_selector("div.quote", timeout=5000)
 
         except Exception as e:
             self.logger.error(f"Scraping failed: {e}")
