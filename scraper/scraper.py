@@ -1,7 +1,6 @@
 from typing import List, Dict
 from playwright.sync_api import Page
 from utils.retry import retry
-
 class QuotesScraper:
     def __init__(self, page: Page, wait_time: int, logger):
         self.page = page
