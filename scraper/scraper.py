@@ -18,7 +18,7 @@ class QuotesScraper:
                 self.page.wait_for_selector("div.quote")
                 quotes = self.page.query_selector_all("div.quote")
 
-                self.logger.info(f"Found {len(quotes)} quotes on page {self.page}")
+                self.logger.info(f"Found {len(quotes)} quotes on page {self.page.url}")
 
                 for q in quotes:
                     try:
